@@ -12,8 +12,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container-fluid {
-    padding: 0;
+.container {
+    padding: 70px 0;
 }
 
 .row {
@@ -25,20 +25,43 @@ header, .navbar {
     background-color: var(--color-4);
 }
 
+header #nav-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
 .nav-item {
     color: var(--color-5);
 }
 
-.navbar-toggler {
-    justify-content: end;
-}
-
 #page-theme-icon {
-    margin-left: 40px;
     color: var(--color-6);
     transition: .2s;
 }
 
 #page-theme-icon:hover {
     transform: scale(1.1);
+}
+
+/* Introduction area */
+#introduction-area {
+    padding-top: 40px;
+    background-color: var(--color-5);
+}
+
+#introduction-area h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+#introduction-author {
+    color: var(--color-4);
+    font-weight: 600;
+}
+
+#introduction-image {
+    width: 400px;
 }

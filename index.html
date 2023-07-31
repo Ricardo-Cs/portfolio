@@ -23,15 +23,12 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-
-            <div class="container">
+            <div class="container-fluid" id="nav-container">
                 <a class="navbar-brand" href="#">Ricardo Costa</a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="#">Sobre</a>
@@ -42,11 +39,28 @@
                     </div>
                 </div>
             </div>
-
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <!-- Introdução -->
+        <section id="introduction-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Olá! 👋
+                            <br>
+                            Sou <span id="introduction-author">Ricardo Costa da Silva</span>
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <img id="introduction-image" src="./img/introduction.svg"
+                            alt="Foto decorativa da introdução do portfólio">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 </body>
