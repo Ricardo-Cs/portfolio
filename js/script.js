@@ -16,7 +16,7 @@ themeButton.addEventListener('click', () => {
 
 // Type effect
 const textElement = document.getElementById('author-dev-area');
-const text = 'Desenvolvedor FullStack Júnior'; // The text you want to type out
+const text = 'Desenvolvedor Full Stack'; // The text you want to type out
 const typingSpeed = 100; // Adjust typing speed in milliseconds
 const eraseSpeed = 50; // Adjust erasing speed in milliseconds
 
