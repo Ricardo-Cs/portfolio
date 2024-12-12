@@ -1,0 +1,51 @@
+header {
+    background-color: var(--color-4);
+    color: #ffffff;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+header .menu {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 12px;
+}
+
+header .menu li {
+    position: relative;
+}
+
+header .menu li.active {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+header .menu li:not(.active)::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    transition: 0.2s;
+    position: absolute;
+    background-color: currentColor;
+    bottom: 0px;
+}
+
+header .menu li:hover::after {
+    width: 100%;
+}
+
+header .sociais a svg{
+    cursor: pointer;
+    width: 32px;
+    height: auto;
+}
+
+header .sociais a svg#github-svg:hover {
+    fill: #000000;
+}
+
+header .sociais a svg#linkedin-svg:hover {
+    fill: #0077b5;
+}
+
