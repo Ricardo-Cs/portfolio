@@ -9,14 +9,3 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-.flex-row-space {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.link-reset {
-    text-decoration: none;
-    color: inherit;
-}
