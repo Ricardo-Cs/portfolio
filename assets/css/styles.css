@@ -1,5 +1,11 @@
-@import './global.css';
-@import './variables.css';
-@import './home.css';
-@import './header.css';
-@import './footer.css';
+/* NavBar */
+#logo-name {
+    font-family: Agustina Signature;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    font-family: Google Sans Regular;
+    font-size: 1.1rem;
+}

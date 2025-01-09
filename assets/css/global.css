@@ -8,4 +8,25 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: Agustina Signature;
+    src: url(../fonts/Agustina-Signature.otf);
+}
+
+@font-face {
+    font-family: Google Sans Regular;
+    src: url(../fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Google Sans Medium;
+    src: url(../fonts/GoogleSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: Google Sans Bold;
+    src: url(../fonts/GoogleSans-Bold.ttf);
 }
