@@ -21,20 +21,23 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg p-3">
-            <div class="container-fluid">
+            <div class="container-md">
                 <a class="navbar-brand" href="#">
-                    <span>< </span>
+                    <span class="dark-text">< </span>
                     <span id="logo-name"> Ricardo Costa </span>
-                    <span> /></span>
+                    <span class="dark-text"> /></span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-flex align-items-center gap-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projetos">Projetos</a>
@@ -43,8 +46,11 @@
                             <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
+                        <div class="nav-icons">
+                            <img id="i-moon" src="./assets/img/moon.svg" alt="Ícone de Lua">
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -52,7 +58,7 @@
     </header>
 
     <section id="sobre">
-        <div class="container">
+        <div class="container-md pt-5">
             <div class="row">
                 <div class="col-md-6">
                     Ricardo Costa

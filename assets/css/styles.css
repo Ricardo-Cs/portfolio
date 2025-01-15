@@ -2,10 +2,23 @@
 #logo-name {
     font-family: Agustina Signature;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 16px;
+    color: var(--text-dark);
 }
 
 .navbar-nav {
-    font-family: Google Sans Regular;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-link {
+    color: var(--text-dark);
+}
+
+#i-moon, #i-moon-solid {
+    cursor: pointer;
+}
+
+#i-moon-solid {
+    display: none;
 }
