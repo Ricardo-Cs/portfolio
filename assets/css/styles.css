@@ -15,10 +15,45 @@
     color: var(--text-dark);
 }
 
-#i-moon, #i-moon-solid {
+#i-moon,
+#i-moon-solid {
     cursor: pointer;
 }
 
 #i-moon-solid {
     display: none;
+}
+
+/* Home */
+#introduction-img {
+    width: 50%;
+    border: 1px solid #e3e3e3;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#author-dev-area {
+    height: 24px;
+    font-size: 16px;
+    color: var(--text-dark);
+    font-weight: 600;
+    border-right: 3px solid #000000;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #000000
+    }
+}
+
+#sobre-description {
+    
 }

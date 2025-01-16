@@ -14,7 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
-    <script src="./assets/js/main.js" defer type="module"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/typeEffect.js" defer></script>
     <title>Portfólio | Home</title>
 </head>
 
@@ -58,10 +59,17 @@
     </header>
 
     <section id="sobre">
-        <div class="container-md pt-5">
+        <div class="container-sm pt-5">
             <div class="row">
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-start pt-5">
+                    <h2>Ricardo Costa</h2>
+                    <span id="author-dev-area"></span>
+                    <span id="sobre-description"></span>
+                </div>
                 <div class="col-md-6">
-                    Ricardo Costa
+                    <div id="introduction-img">
+                        <img src="./assets/img/introduction.svg" class="" alt="Imagem de um dev">
+                    </div>
                 </div>
             </div>
         </div>

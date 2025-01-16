@@ -1,5 +1,5 @@
 const textElement = document.getElementById('author-dev-area');
-const text = ['Desenvolvedor Web', 'Estudante de Programação', 'Desenvolvedor Back-end'];
+const text = ['Desenvolvedor Full-Stack', 'Graduando em Sistemas para Internet'];
 let cout = 0;
 const typingSpeed = 100; 
 const eraseSpeed = 50;
