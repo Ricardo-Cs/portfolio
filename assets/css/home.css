@@ -1,0 +1,46 @@
+/* Home */
+#home .container {
+    max-width: 900px;
+}
+
+#introduction-img {
+    width: 70%;
+    border: 1px solid #e3e3e3;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#home div > h2 {
+    font-weight: 500;
+}
+
+#author-dev-area {
+    height: 24px;
+    width: fit-content;
+    font-size: 18px;
+    color: #686666;
+    font-weight: 600;
+    border-right: 2px solid #000000;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #000000
+    }
+}
+
+/* #about-description {
+   
+} */
+
+#home-social ul li {
+    list-style: none;
+}

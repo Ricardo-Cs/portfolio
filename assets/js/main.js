@@ -1,5 +1,5 @@
-const moonIcon = document.getElementById('i-moon');
+// const moonIcon = document.getElementById('i-moon');
 
-moonIcon.addEventListener("click", () => {
-    moonIcon.src = "./assets/img/moon-solid.svg"
-});
+// moonIcon.addEventListener("click", () => {
+//     moonIcon.src = "./assets/img/moon-solid.svg"
+// });
