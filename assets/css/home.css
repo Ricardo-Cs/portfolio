@@ -1,8 +1,4 @@
 /* Home */
-#home .container {
-    max-width: 900px;
-}
-
 #introduction-img {
     width: 70%;
     border: 1px solid #e3e3e3;
@@ -12,7 +8,7 @@
 }
 
 #home div > h2 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #author-dev-area {

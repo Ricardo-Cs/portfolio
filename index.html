@@ -16,7 +16,7 @@
         defer></script>
     <script src="./assets/js/main.js" defer></script>
     <script src="./assets/js/typeEffect.js" defer></script>
-    <title>Portfólio | Home</title>
+    <title>Ricardo | Portfólio</title>
 </head>
 
 <body>
@@ -24,9 +24,10 @@
         <nav class="navbar navbar-expand-lg p-3">
             <div class="container-md">
                 <a class="navbar-brand" href="#">
-                    <span class="dark-text">< </span>
-                    <span id="logo-name"> Ricardo Costa </span>
-                    <span class="dark-text"> /></span>
+                    <span class="dark-text">
+                        < </span>
+                            <span id="logo-name"> Ricardo Costa </span>
+                            <span class="dark-text"> /></span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,12 +65,16 @@
                 <div class="col-md-6 d-flex flex-column justify-content-start pt-5">
                     <h2 class="display-4">Ricardo Costa</h2>
                     <span id="author-dev-area" class="mb-3"></span>
-                    <span id="home-description" class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit, exercitationem in ratione facere aliquam.</span>
+                    <span id="home-description" class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias suscipit, exercitationem in ratione facere aliquam.</span>
                     <div id="home-social">
                         <ul class="d-flex gap-3 p-0 justify-content-center">
-                            <li><a href="https://github.com/Ricardo-Cs"><img src="./assets/img/github.svg" alt="Ícone do github"></a></li>
-                            <li><a href=""><img src="./assets/img/linkedin.svg" alt="Ícone do linkedin"></a></li>
-                            <li><a href=""><img src="./assets/img/instagram.svg" alt="Ícone do instagram"></a></li>
+                            <li><a href="https://github.com/Ricardo-Cs" target="_blank"><img
+                                        src="./assets/img/github.svg" alt="Ícone do github"></a></li>
+                            <li><a href="https://www.linkedin.com/in/ricardo-costa-s" target="_blank"><img
+                                        src="./assets/img/linkedin.svg" alt="Ícone do linkedin"></a></li>
+                            <li><a href="https://instagram.com/ricardo.silvac" target="_blank"><img
+                                        src="./assets/img/instagram.svg" alt="Ícone do instagram"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +92,31 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <h2>Sobre Mim</h2>
+                <div class="col-sm-12 d-flex flex-column gap-4 align-items-center">
+                    <div class="section-head">
+                        <h2 class="section-title">Sobre Mim</h2>
+                        <span class="section-description">Introdução</span>
+                    </div>
+                    <!-- Trocar de imagem depois -->
+                    <img src="./assets/img/about.svg" class="" alt="Imagem de um dev"
+                        style="width: 350px; border-radius: 10px;">
+                    <span class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis beatae
+                        est nemo. Vero sit totam omnis voluptates excepturi ex delectus nostrum amet repellat, nesciunt
+                        molestiae maiores repellendus atque neque corporis. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Libero molestiae vitae illo consequatur, magnam maxime est beatae nobis
+                        voluptatibus omnis sit numquam, velit eos sequi ad earum laborum nam vel?</span>
+                </div>
+            </div>
+
+            <div class="about-stats row d-flex justify-content-center mt-5">
+                <div class="col-md-4 text-center">Teste</div>
+                <div class="col-md-4 text-center">Teste</div>
+                <div class="col-md-4 text-center">Teste</div>
+
+                <a href="./assets/file/teste.txt" download="teste" id="btn-cv" class="btn btn-primary mt-4">
+                    <span>Baixar currículo</span>
+                    <img src="./assets/img/download.svg" alt="Ícone de download">
+                </a>
             </div>
         </div>
     </section>

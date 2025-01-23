@@ -37,3 +37,15 @@ body {
 .divider {
     height: 150px;
 }
+
+.container {
+    max-width: 992px;
+}
+
+.section-head {
+    text-align: center;
+}
+
+.section-head .section-title {
+    font-weight: 600;
+}
