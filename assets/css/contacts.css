@@ -1,0 +1,9 @@
+#contact-content {
+    background-color: #27dec0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-item-text-title {
+    font-weight: bold;
+}
