@@ -1,0 +1,27 @@
+@media (width < 768px) {
+    /* Education */
+    .education-calendar span {
+        font-size: 12px;
+    }
+
+    /* Contacts */
+    #contact-content {
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
+
+    .contact-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (width < 576px) {
+    /* Education */
+    .education-data .education-title {
+        font-size: 16px;
+    }
+    .education-data .education-subtitle {
+        font-size: 12px;
+    }
+}
