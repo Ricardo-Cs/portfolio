@@ -13,29 +13,24 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    --text-white: #ffffff;
-    --text-dark: #142136;
-    --bg-grey-light: #f5f5f5;
-    background-color: var(--bg-grey-light);
-}
-
-.dark {
-    --text-white: #e6e6e6;
-    --text-dark: #ffffff;
-    --bg-grey-light: #e6e6e6;
-}
-
-.white-text {
-    color: var(--text-white);
-}
-
-.dark-text {
-    color: var(--text-dark);
+    background-color: #fdfdfd;
 }
 
 @font-face {
     font-family: Agustina Signature;
     src: url(../fonts/Agustina-Signature.otf);
+}
+
+#logo-name {
+    font-family: Agustina Signature;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-dark);
+}
+
+.navbar-nav {
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .divider {
@@ -46,6 +41,10 @@ body {
     max-width: 992px;
 }
 
+.description-text {
+    color: #6b6a7c;
+}
+
 .section-head {
     text-align: center;
     margin-bottom: 25px;
@@ -53,4 +52,9 @@ body {
 
 .section-head .section-title {
     font-weight: 600;
+}
+
+.section-head .section-description {
+    font-size: 14px;
+    color: #6b6a7c;
 }

@@ -1,9 +1,6 @@
-/* Home */
 #introduction-img {
     width: 70%;
-    /* border: 1px solid #e3e3e3; */
     object-fit: cover;
-    /* border-radius: 50%; */
     overflow: hidden;
 }
 

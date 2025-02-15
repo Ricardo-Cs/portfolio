@@ -1,0 +1,35 @@
+.skills-category {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.skills-category-title {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #0d6efd;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.skills-name {
+    font-weight: 500;
+}
