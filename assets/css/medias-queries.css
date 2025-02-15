@@ -31,6 +31,14 @@
     section {
         padding: 0 10px;
     }
+    /* Sobre */
+    .about-stats-qtd {
+        font-size: 20px;
+    }
+
+    .about-stats-qtd + span {
+        font-size: 14px;
+    }
 
     .description-text {
         font-size: 14px;
@@ -42,6 +50,11 @@
     }
     .education-data .education-subtitle {
         font-size: 12px;
+    }
+
+    /* Skills */
+    .skills-item {
+        font-size: 14px;
     }
 
     /* Contacts */
