@@ -1,3 +1,14 @@
+@media (width > 767px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+}
+
 @media (width < 768px) {
     /* Education */
     .education-calendar span {
@@ -17,11 +28,48 @@
 }
 
 @media (width < 576px) {
+    section {
+        padding: 0 10px;
+    }
+
+    .description-text {
+        font-size: 14px;
+    }
+
     /* Education */
     .education-data .education-title {
         font-size: 16px;
     }
     .education-data .education-subtitle {
         font-size: 12px;
+    }
+
+    /* Contacts */
+    .contact-item-text {
+        font-size: 12px;
+    }
+
+    #contact-button {
+        font-size: 14px;
+        padding: 12px 16px;
+        margin: 0 auto;
+    }
+
+    #contact-button img {
+        width: 18px;
+    }
+
+    #contact-content {
+        padding: 36px 28px 0;
+    }
+
+    /* Footer */
+    .footer p {
+        text-align: center;
+    }
+
+    .footer a {
+        margin-top: 10px;
+       margin: 0 auto;
     }
 }
