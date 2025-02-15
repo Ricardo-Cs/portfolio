@@ -15,6 +15,12 @@
         font-size: 12px;
     }
 
+    /* Projects */
+    .carousel {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
     /* Contacts */
     #contact-content {
         grid-template-columns: 1fr;
@@ -84,5 +90,27 @@
     .footer a {
         margin-top: 10px;
        margin: 0 auto;
+    }
+}
+
+@media (width < 380px) {
+    .line {
+        height: 110%;
+    }
+
+    .education-data .education-title {
+        font-size: 14px;
+    }
+
+    .education-data .education-subtitle {
+        font-size: 10px;
+    }
+
+    .education-calendar img {
+        width: 14px;
+    }
+
+    .education-data {
+        column-gap: 0.5rem;
     }
 }

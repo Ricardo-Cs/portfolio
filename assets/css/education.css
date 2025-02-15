@@ -44,7 +44,7 @@
 .line {
     display: block;
     background-color: #000000;
-    height: 115%;
+    height: 120%;
     width: 1px;
     transform: translate(7px, -7px);
     position: relative; /* Necessário para z-index */
