@@ -21,6 +21,7 @@
     <script src="./assets/js/backToTop.js" defer></script>
     <script src="./assets/js/typeEffect.js" defer></script>
     <script src="./assets/js/slideShow.js" defer></script>
+    <script src="./assets/js/qualificationChange.js" defer></script>
     <title>Ricardo | Portfólio</title>
 </head>
 
@@ -51,7 +52,7 @@
                             <a class="nav-link" href="#about">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#education">Formação</a>
+                            <a class="nav-link" href="#qualifications">Qualificações</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#skills">Habilidades</a>
@@ -142,20 +143,41 @@
 
     <div class="divider"></div>
 
-    <section id="education">
+    <section id="qualifications">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-head">
-                        <h2 class="section-title">Formação</h2>
-                        <span class="section-description">Descrição da minha trajetória acadêmica até o momento.</span>
+                        <h2 class="section-title">Qualificações</h2>
+                        <span class="section-description">Educação e experiência profissional.</span>
                     </div>
-                    <div class="education-content text-center">
-                        <div class="education-data pt-0">
+                    <div class="qualification-menu d-flex justify-content-center gap-5">
+                        <div class="qualification-menu-item active">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                                fill="#000000">
+                                <path
+                                    d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
+                            </svg>
+
+                            <span>Educação</span>
+                        </div>
+
+                        <div class="qualification-menu-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                                fill="#000000">
+                                <path
+                                    d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                            </svg>
+
+                            <span>Trabalho</span>
+                        </div>
+                    </div>
+                    <div class="qualification-content text-center active">
+                        <div class="qualification-data pt-0">
                             <div>
-                                <h3 class="education-title">Instituto Federal do Acre (IFAC)</h3>
-                                <span class="education-subtitle">Tecnólogo em Sistemas para Internet</span>
-                                <div class="education-calendar">
+                                <h3 class="qualification-title">Instituto Federal do Acre (IFAC)</h3>
+                                <span class="qualification-subtitle">Tecnólogo em Sistemas para Internet</span>
+                                <div class="qualification-calendar">
                                     <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
                                     <span>02/2024 - presente</span>
                                 </div>
@@ -166,29 +188,77 @@
                             </div>
                             <div></div>
                         </div>
-                        <div class="education-data text-start">
+                        <div class="qualification-data text-start">
                             <div></div>
                             <div>
                                 <div class="dot"></div>
                                 <div class="line"></div>
                             </div>
                             <div>
-                                <h3 class="education-title">Universidade Federal do Acre (UFAC)</h3>
-                                <span class="education-subtitle">Projeto WebAcademy: Capacitação em desenvolvimento web
+                                <h3 class="qualification-title">Universidade Federal do Acre (UFAC)</h3>
+                                <span class="qualification-subtitle">Projeto WebAcademy: Capacitação em desenvolvimento
+                                    web
                                     Full-stack</span>
-                                <div class="education-calendar justify-content-start">
+                                <div class="qualification-calendar justify-content-start">
                                     <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
                                     <span>08/2023 - 11/2023</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="education-data">
+                        <div class="qualification-data">
                             <div>
-                                <h3 class="education-title">Instituto Federal do Acre (IFAC)</h3>
-                                <span class="education-subtitle">Técnico em Informática para Internet</span>
-                                <div class="education-calendar">
+                                <h3 class="qualification-title">Instituto Federal do Acre (IFAC)</h3>
+                                <span class="qualification-subtitle">Técnico em Informática para Internet</span>
+                                <div class="qualification-calendar">
                                     <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
                                     <span>02/2020 - 12/2022</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dot"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="qualification-content text-center">
+                        <div class="qualification-data pt-0">
+                            <div>
+                                <h3 class="qualification-title">Estagiário de T.I</h3>
+                                <span class="qualification-subtitle">Tribunal de Justiça do Estado do Acre (TJAC)</span>
+                                <div class="qualification-calendar">
+                                    <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
+                                    <span>06/2025 - presente</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="qualification-data text-start">
+                            <div></div>
+                            <div>
+                                <div class="dot"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div>
+                                <h3 class="qualification-title">...</h3>
+                                <span class="qualification-subtitle">...</span>
+                                <div class="qualification-calendar justify-content-start">
+                                    <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
+                                    <span>00/0000 - 00/0000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qualification-data">
+                            <div>
+                                <h3 class="qualification-title">...</h3>
+                                <span class="qualification-subtitle">...</span>
+                                <div class="qualification-calendar">
+                                    <img src="./assets/img/icons/calendar.svg" alt="Ícone de Calendário">
+                                    <span>00/0000 - 00/0000</span>
                                 </div>
                             </div>
                             <div>
@@ -881,7 +951,7 @@
             <ul class="nav col-md-4 justify-content-center">
                 <li class=" nav-item"><a href="#home" class="nav-link px-2 text-white">Início</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link px-2 text-white">Sobre</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link px-2 text-white">Formação</a></li>
+                <li class="nav-item"><a href="#qualification" class="nav-link px-2 text-white">Formação</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link px-2 text-white">Habilidades</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projetos</a></li>
             </ul>
