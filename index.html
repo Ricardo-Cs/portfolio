@@ -459,11 +459,11 @@
                         <span class="section-description">Meus projetos pessoais</span>
                     </div>
 
-                    <div id="carousel" class="carousel">
+                    <!-- Swiper -->
+                    <div class="swiper container">
+                        <div class="swiper-wrapper">
 
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/portfolio-project.png" class="d-block w-100">
@@ -476,58 +476,16 @@
                                             <span class="card-skill-item">JavaScript</span>
                                             <span class="card-skill-item">Bootstrap</span>
                                         </span>
-                                        <!-- Botão para ativar modal -->
                                         <span type="button" class="card-details" data-bs-toggle="modal"
                                             data-bs-target="#portfolio-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
+                                            Ver detalhes <img src="./assets/img/icons/arrow-right.svg"
+                                                alt="Ícone de seta">
                                         </span>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="portfolio-modal" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Portfólio
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Meu Portfólio Profissional feito com HTML, CSS, Javascript e
-                                                            Bootstrap.
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>HTML 5</li>
-                                                                <li>CSS 3</li>
-                                                                <li>Javascript</li>
-                                                                <li>Bootstrap 5.3</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/portfolio">Link do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/teste-tecnico-project.png" class="d-block w-100"
@@ -596,7 +554,7 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/sistema-gerenciamento-project.png"
@@ -665,7 +623,8 @@
                                 </div>
                             </div>
 
-                            <div class="carousel-item">
+
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/easy-lab-project.png" class="d-block w-100"
@@ -735,8 +694,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="carousel-item">
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/video-game-match-project.png"
@@ -803,8 +761,7 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="carousel-item">
+                            <div class="swiper-slide">
                                 <div class="card">
                                     <div class="img-wrapper">
                                         <img src="./assets/img/projects/quiz-project.png" class="d-block w-100"
@@ -874,17 +831,9 @@
 
                         </div>
 
-                        <button class="carousel-control-prev
-                        justify-content-center" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next
-                        justify-content-center" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
+                        <!-- Navegação e paginação -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -937,86 +886,6 @@
             </div>
         </div>
     </section>
-
-
-    <div class="divider"></div>
-
-    <!-- Swiper -->
-    <div class="swiper container">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./assets/img/projects/portfolio-project.png" class="d-block w-100">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Portfólio</h5>
-                        <span class="card-skills">
-                            <span class="card-skill-item">HTML</span>
-                            <span class="card-skill-item">CSS</span>
-                            <span class="card-skill-item">JavaScript</span>
-                            <span class="card-skill-item">Bootstrap</span>
-                        </span>
-                        <span type="button" class="card-details" data-bs-toggle="modal"
-                            data-bs-target="#portfolio-modal">
-                            Ver detalhes <img src="./assets/img/icons/arrow-right.svg" alt="Ícone de seta">
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./assets/img/projects/portfolio-project.png" class="d-block w-100">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Outro Projeto</h5>
-                        <span class="card-skills">
-                            <span class="card-skill-item">HTML</span>
-                            <span class="card-skill-item">CSS</span>
-                            <span class="card-skill-item">JavaScript</span>
-                            <span class="card-skill-item">Bootstrap</span>
-                        </span>
-                        <span type="button" class="card-details" data-bs-toggle="modal"
-                            data-bs-target="#portfolio-modal">
-                            Ver detalhes <img src="./assets/img/icons/arrow-right.svg" alt="Ícone de seta">
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="card">
-                    <div class="img-wrapper">
-                        <img src="./assets/img/projects/portfolio-project.png" class="d-block w-100">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Mais um Projeto</h5>
-                        <span class="card-skills">
-                            <span class="card-skill-item">HTML</span>
-                            <span class="card-skill-item">CSS</span>
-                            <span class="card-skill-item">JavaScript</span>
-                            <span class="card-skill-item">Bootstrap</span>
-                        </span>
-                        <span type="button" class="card-details" data-bs-toggle="modal"
-                            data-bs-target="#portfolio-modal">
-                            Ver detalhes <img src="./assets/img/icons/arrow-right.svg" alt="Ícone de seta">
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Adicione mais slides aqui -->
-
-        </div>
-
-        <!-- Navegação e paginação -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-    </div>
 
     <div class="divider"></div>
 
