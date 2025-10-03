@@ -5,11 +5,11 @@ const swiper = new Swiper('.swiper', {
   pagination: { el: '.swiper-pagination', clickable: true },
   navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   breakpoints: {
-    0: {          // a partir de 0px de largura
+    0: {
       slidesPerView: 1,
       slidesPerGroup: 1
     },
-    768: {        // a partir de 768px
+    768: {
       slidesPerView: 3,
       slidesPerGroup: 1
     }
