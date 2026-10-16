@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css">
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js" defer></script>
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -23,7 +23,6 @@
     <script src="./assets/js/backToTop.js" defer></script>
     <script src="./assets/js/typeEffect.js" defer></script>
     <script src="./assets/js/swiperSlides.js" defer></script>
-    <script src="./assets/js/slideShow.js" defer></script>
     <script src="./assets/js/qualificationChange.js" defer></script>
 
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -459,384 +458,375 @@
                         <span class="section-description">Meus projetos pessoais</span>
                     </div>
 
-                    <!-- Swiper -->
-                    <div class="swiper container">
-                        <div class="swiper-wrapper">
+                    <div class="projects-carousel">
+                        <div class="swiper projects-swiper">
+                            <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/portfolio-project.png" class="d-block w-100">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Portfólio</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">HTML</span>
-                                            <span class="card-skill-item">CSS</span>
-                                            <span class="card-skill-item">JavaScript</span>
-                                            <span class="card-skill-item">Bootstrap</span>
-                                        </span>
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#portfolio-modal">
-                                            Ver detalhes <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta">
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/teste-tecnico-project.png" class="d-block w-100"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Teste Técnico Full-Stack</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">Node.js</span>
-                                            <span class="card-skill-item">React.js</span>
-                                            <span class="card-skill-item">Typescript</span>
-                                            <span class="card-skill-item">API Externa</span>
-                                        </span>
-                                        <!-- Botão para ativar modal -->
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#teste-tecnico-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
-                                        </span>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="teste-tecnico-modal" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Teste
-                                                            Técnico Full-Stack
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Teste Técnico Full-Stack feito para uma vaga de estágio. O
-                                                            projeto é uma
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>React.js</li>
-                                                                <li>Node.js</li>
-                                                                <li>Express</li>
-                                                                <li>Typescript</li>
-                                                                <li>Prisma</li>
-                                                                <li>SQLite</li>
-                                                                <li>Docker</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/teste-tecnico-shopper">Link
-                                                                do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/portfolio-project.png"
+                                                alt="Captura de tela do Portfólio" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Portfólio</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">HTML</span>
+                                                <span class="card-skill-item">CSS</span>
+                                                <span class="card-skill-item">JavaScript</span>
+                                                <span class="card-skill-item">Bootstrap</span>
                                             </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#portfolio-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/sistema-gerenciamento-project.png"
-                                            class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Sistema de Gerenciamento de Tarefas Profissionais</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">Java</span>
-                                            <span class="card-skill-item">Spring</span>
-                                            <span class="card-skill-item">Angular</span>
-                                            <span class="card-skill-item">Typescript</span>
-                                        </span>
-                                        <!-- Botão para ativar modal -->
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#sistema-gerenciamento-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
-                                        </span>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="sistema-gerenciamento-modal"
-                                            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                                            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Sistema de
-                                                            Gerenciamento de Tarefas Profissionais
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Projeto de um Sistema de Gerenciamento de Tarefas em uma
-                                                            empresa. Feito com Java e Spring + Angular.
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>Java</li>
-                                                                <li>Spring</li>
-                                                                <li>Hibernate</li>
-                                                                <li>Angular</li>
-                                                                <li>Typescript</li>
-                                                                <li>MYSQL</li>
-                                                                <li>API REST</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/sistema-gerenciamento-de-tarefas">Link
-                                                                do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/teste-tecnico-project.png"
+                                                alt="Captura de tela do Teste Técnico Full-Stack" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Teste Técnico Full-Stack</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">Node.js</span>
+                                                <span class="card-skill-item">React.js</span>
+                                                <span class="card-skill-item">Typescript</span>
+                                                <span class="card-skill-item">API Externa</span>
                                             </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#teste-tecnico-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/easy-lab-project.png" class="d-block w-100"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Easy Lab - Agendamento de Espaços e Equipamentos</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">Node.js</span>
-                                            <span class="card-skill-item">Angular</span>
-                                            <span class="card-skill-item">Typescript</span>
-                                            <span class="card-skill-item">Scrum</span>
-                                        </span>
-                                        <!-- Botão para ativar modal -->
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#easy-lab-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
-                                        </span>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="easy-lab-modal" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Easy Lab -
-                                                            Agendamento de Espaços e Equipamentos
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Meu primeiro projeto real, feito em equipe como finalização
-                                                            do curso de capacitação web Full-Stack: Web Academy. O
-                                                            projeto foi desenvolvido desde o levantamento de requisitos
-                                                            até o deploy. Conta com uma API REST feita com Node.js e
-                                                            Typescript, banco de dados relacional com MYSQL e interface
-                                                            com Angular.
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>Node.js</li>
-                                                                <li>Angular</li>
-                                                                <li>Typescript</li>
-                                                                <li>MYSQL</li>
-                                                                <li>Scrum</li>
-                                                                <li>CI / CD</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/portfolio">Link do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/sistema-gerenciamento-project.png"
+                                                alt="Captura de tela do Sistema de Gerenciamento de Tarefas"
+                                                loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Sistema de Gerenciamento de Tarefas Profissionais</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">Java</span>
+                                                <span class="card-skill-item">Spring</span>
+                                                <span class="card-skill-item">Angular</span>
+                                                <span class="card-skill-item">Typescript</span>
                                             </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#sistema-gerenciamento-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/video-game-match-project.png"
-                                            class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Video Game Match</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">Node.js</span>
-                                            <span class="card-skill-item">API Externa</span>
-                                            <span class="card-skill-item">Typescript</span>
-                                            <span class="card-skill-item">React</span>
-                                        </span>
-                                        <!-- Botão para ativar modal -->
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#video-game-match-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
-                                        </span>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="video-game-match-modal" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Video Game
-                                                            Match
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Um jogo web interativo no estilo Jogo da Velha, porém com
-                                                            video games. Feito com React.js no Front-end e Node.js no
-                                                            Back-end. Além a API da GiantBomb para o funcionamento do
-                                                            jogo.
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>React.js</li>
-                                                                <li>Node.js</li>
-                                                                <li>Typescript</li>
-                                                                <li>API Externa - https://www.giantbomb.com/api/</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/VideoGameMatch">Link
-                                                                do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/easy-lab-project.png"
+                                                alt="Captura de tela do Easy Lab" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Easy Lab - Agendamento de Espaços e Equipamentos</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">Node.js</span>
+                                                <span class="card-skill-item">Angular</span>
+                                                <span class="card-skill-item">Typescript</span>
+                                                <span class="card-skill-item">Scrum</span>
                                             </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#easy-lab-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="img-wrapper">
-                                        <img src="./assets/img/projects/quiz-project.png" class="d-block w-100"
-                                            alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Quiz JS</h5>
-                                        <span class="card-skills">
-                                            <span class="card-skill-item">HTML</span>
-                                            <span class="card-skill-item">CSS</span>
-                                            <span class="card-skill-item">Javascript</span>
-                                            <span class="card-skill-item">Git</span>
-                                            <span class="card-skill-item">Github</span>
-                                        </span>
-                                        <!-- Botão para ativar modal -->
-                                        <span type="button" class="card-details" data-bs-toggle="modal"
-                                            data-bs-target="#quiz-js-modal">
-                                            Ver detalhes
-                                            <img src="./assets/img/icons/arrow-right.svg"
-                                                alt="Ícone de seta para a direita">
-                                        </span>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="quiz-js-modal" data-bs-backdrop="static"
-                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                            aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h3 class="modal-title fs-5" id="staticBackdropLabel">Quiz JS
-                                                        </h3>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <span class="modal-description">
-                                                            Um quiz simples feito apenas com HTML, CSS e JS.
-                                                        </span>
-
-                                                        <div class="modal-skills mt-3">
-                                                            <ul>
-                                                                <li>HTML 5</li>
-                                                                <li>CSS 3</li>
-                                                                <li>Javascript</li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="modal-links">
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://github.com/Ricardo-Cs/quiz-js">Link do
-                                                                Repositório <img
-                                                                    src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-
-                                                            <a class="modal-link-item" target="_blank"
-                                                                href="https://ricardo-cs.github.io/quiz-js/">Link do
-                                                                Site<img src="./assets/img/icons/arrow-right.svg"
-                                                                    alt="Ícone de seta para a direita"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/video-game-match-project.png"
+                                                alt="Captura de tela do Video Game Match" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Video Game Match</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">Node.js</span>
+                                                <span class="card-skill-item">API Externa</span>
+                                                <span class="card-skill-item">Typescript</span>
+                                                <span class="card-skill-item">React</span>
                                             </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#video-game-match-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="img-wrapper">
+                                            <img src="./assets/img/projects/quiz-project.png"
+                                                alt="Captura de tela do Quiz JS" loading="lazy">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Quiz JS</h3>
+                                            <div class="card-skills">
+                                                <span class="card-skill-item">HTML</span>
+                                                <span class="card-skill-item">CSS</span>
+                                                <span class="card-skill-item">Javascript</span>
+                                                <span class="card-skill-item">Git</span>
+                                                <span class="card-skill-item">Github</span>
+                                            </div>
+                                            <button type="button" class="card-details" data-bs-toggle="modal"
+                                                data-bs-target="#quiz-js-modal">
+                                                Ver detalhes
+                                                <img src="./assets/img/icons/arrow-right.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
+                            <div class="swiper-pagination projects-pagination"></div>
                         </div>
 
-                        <!-- Navegação e paginação -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <!-- Navegação (fora do .swiper para não ficar por cima dos cards) -->
+                        <button type="button" class="swiper-button-prev projects-prev"></button>
+                        <button type="button" class="swiper-button-next projects-next"></button>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Modais dos projetos: ficam fora do Swiper, pois o transform do carrossel quebra o position: fixed -->
+        <div class="modal fade" id="portfolio-modal" tabindex="-1" aria-labelledby="portfolio-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="portfolio-modal-title">Portfólio</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Este portfólio pessoal, feito com HTML, CSS e JavaScript puro, usando Bootstrap no layout
+                            e Swiper no carrossel de projetos.
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>Swiper</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/portfolio">Link do Repositório
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="teste-tecnico-modal" tabindex="-1" aria-labelledby="teste-tecnico-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="teste-tecnico-modal-title">Teste Técnico Full-Stack</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Teste Técnico Full-Stack feito para uma vaga de estágio. O projeto é uma
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>Typescript</li>
+                                <li>Prisma</li>
+                                <li>SQLite</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/teste-tecnico-shopper">Link do Repositório
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sistema-gerenciamento-modal" tabindex="-1"
+            aria-labelledby="sistema-gerenciamento-modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="sistema-gerenciamento-modal-title">Sistema de Gerenciamento de
+                            Tarefas Profissionais</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Projeto de um Sistema de Gerenciamento de Tarefas em uma empresa. Feito com Java e Spring +
+                            Angular.
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>Hibernate</li>
+                                <li>Angular</li>
+                                <li>Typescript</li>
+                                <li>MYSQL</li>
+                                <li>API REST</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/sistema-gerenciamento-de-tarefas">Link do
+                                Repositório <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="easy-lab-modal" tabindex="-1" aria-labelledby="easy-lab-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="easy-lab-modal-title">Easy Lab - Agendamento de Espaços e
+                            Equipamentos</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Meu primeiro projeto real, feito em equipe como finalização do curso de capacitação web
+                            Full-Stack: Web Academy. O projeto foi desenvolvido desde o levantamento de requisitos até o
+                            deploy. Conta com uma API REST feita com Node.js e Typescript, banco de dados relacional com
+                            MYSQL e interface com Angular.
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Angular</li>
+                                <li>Typescript</li>
+                                <li>MYSQL</li>
+                                <li>Scrum</li>
+                                <li>CI / CD</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/portfolio">Link do Repositório
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="video-game-match-modal" tabindex="-1"
+            aria-labelledby="video-game-match-modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="video-game-match-modal-title">Video Game Match</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Um jogo web interativo no estilo Jogo da Velha, porém com video games. Feito com React.js no
+                            Front-end e Node.js no Back-end. Além a API da GiantBomb para o funcionamento do jogo.
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>Typescript</li>
+                                <li>API Externa - https://www.giantbomb.com/api/</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/VideoGameMatch">Link do Repositório
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="quiz-js-modal" tabindex="-1" aria-labelledby="quiz-js-modal-title"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="quiz-js-modal-title">Quiz JS</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="modal-description">
+                            Um quiz simples feito apenas com HTML, CSS e JS.
+                        </span>
+
+                        <div class="modal-skills mt-3">
+                            <ul>
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-links">
+                            <a class="modal-link-item" target="_blank"
+                                href="https://github.com/Ricardo-Cs/quiz-js">Link do Repositório
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+
+                            <a class="modal-link-item" target="_blank"
+                                href="https://ricardo-cs.github.io/quiz-js/">Link do Site
+                                <img src="./assets/img/icons/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="divider"></div>

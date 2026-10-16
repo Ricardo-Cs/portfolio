@@ -1,24 +1,7 @@
-@media (width > 767px) {
-    .carousel-inner {
-      display: flex;
-    }
-    .carousel-item {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
-    }
-}
-
 @media (width < 768px) {
     /* Education */
     .education-calendar span {
         font-size: 12px;
-    }
-
-    /* Projects */
-    .carousel {
-        max-width: 500px;
-        margin: 0 auto;
     }
 
     /* Contacts */
@@ -61,6 +44,16 @@
     /* Skills */
     .skills-item {
         font-size: 14px;
+    }
+
+    /* Projects: no celular a navegação é por swipe + paginação */
+    .projects-carousel {
+        padding: 0;
+    }
+
+    .projects-prev,
+    .projects-next {
+        display: none;
     }
 
     /* Contacts */

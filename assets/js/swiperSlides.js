@@ -1,17 +1,18 @@
-const swiper = new Swiper('.swiper', {
-  loop: true,
-  slidesPerView: 3,
-  slidesPerGroup: 1,
-  pagination: { el: '.swiper-pagination', clickable: true },
-  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+const projectsSwiper = new Swiper('.projects-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  grabCursor: true,
+  watchOverflow: true,
+  keyboard: { enabled: true, onlyInViewport: true },
+  pagination: { el: '.projects-pagination', clickable: true },
+  navigation: { nextEl: '.projects-next', prevEl: '.projects-prev' },
+  a11y: {
+    prevSlideMessage: 'Projeto anterior',
+    nextSlideMessage: 'Próximo projeto',
+    paginationBulletMessage: 'Ir para o projeto {{index}}',
+  },
   breakpoints: {
-    0: {          // a partir de 0px de largura
-      slidesPerView: 1,
-      slidesPerGroup: 1
-    },
-    768: {        // a partir de 768px
-      slidesPerView: 3,
-      slidesPerGroup: 1
-    }
-  }
+    576: { slidesPerView: 2 },  // tablets
+    992: { slidesPerView: 3 },  // desktop
+  },
 });
