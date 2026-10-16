@@ -16,18 +16,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
 
     <!-- Locais -->
     <script src="./assets/js/backToTop.js" defer></script>
     <script src="./assets/js/typeEffect.js" defer></script>
     <script src="./assets/js/swiperSlides.js" defer></script>
     <script src="./assets/js/qualificationChange.js" defer></script>
+    <script src="./assets/js/currentYear.js" defer></script>
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
     <title>Ricardo | Portfólio</title>
+    <meta name="description"
+        content="Portfólio de Ricardo Costa, desenvolvedor Back-end e estudante de Sistemas para Internet no IFAC. Projetos, habilidades e contato.">
+    <meta name="author" content="Ricardo Costa">
+
+    <!-- Open Graph (prévia ao compartilhar o link) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Ricardo Costa | Portfólio">
+    <meta property="og:description"
+        content="Desenvolvedor Back-end e estudante de Sistemas para Internet no IFAC. Veja meus projetos e habilidades.">
+    <meta property="og:url" content="https://ricardo-cs.github.io/portfolio/">
+    <meta property="og:image" content="https://ricardo-cs.github.io/portfolio/assets/img/projects/portfolio-project.png">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
@@ -125,7 +137,7 @@
 
             <div class="about-stats row d-flex justify-content-center mt-5">
                 <div class="col-md-4 text-center">
-                    <span class="about-stats-qtd">+ 3 anos</span>
+                    <span class="about-stats-qtd">+ 6 anos</span>
                     <span>de estudo na área</span>
                 </div>
                 <div class="col-md-4 text-center">
@@ -161,7 +173,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
                                 fill="#000000">
                                 <path
-                                    d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
+                                    d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
                             </svg>
 
                             <span>Educação</span>
@@ -171,7 +183,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
                                 fill="#000000">
                                 <path
-                                    d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                                    d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
                             </svg>
 
                             <span>Trabalho</span>
@@ -882,7 +894,7 @@
 
     <section class="footer">
         <footer class="container-lg d-flex flex-wrap justify-content-between align-items-center py-3">
-            <p class="col-md-4 mb-0 text-white">© Ricardo Costa. Todos os Direitos Reservados. 2025</p>
+            <p class="col-md-4 mb-0 text-white">© Ricardo Costa. Todos os Direitos Reservados. <span id="current-year">2025</span></p>
 
             <a href="#"
                 class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -894,11 +906,12 @@
             </a>
 
             <ul class="nav col-md-4 justify-content-center">
-                <li class=" nav-item"><a href="#home" class="nav-link px-2 text-white">Início</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">Início</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link px-2 text-white">Sobre</a></li>
-                <li class="nav-item"><a href="#qualification" class="nav-link px-2 text-white">Formação</a></li>
+                <li class="nav-item"><a href="#qualifications" class="nav-link px-2 text-white">Qualificações</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link px-2 text-white">Habilidades</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projetos</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-white">Contato</a></li>
             </ul>
         </footer>
     </section>
