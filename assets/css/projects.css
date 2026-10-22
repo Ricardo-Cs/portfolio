@@ -93,16 +93,31 @@
     transform: translateX(4px);
 }
 
+/* Altura limitada para a descrição caber sem rolar; o clique abre a imagem em tamanho real */
+.modal-img {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal-img img {
+    max-width: 100%;
+    max-height: min(220px, 30vh);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+
 .modal-description {
     color: #6b6a7c;
 }
 
+/* Duas colunas para a lista não empurrar os links para fora da tela */
 .modal-skills ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem 1rem;
     color: #6b6a7c;
 }
 
