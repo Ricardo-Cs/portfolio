@@ -42,6 +42,7 @@
 }
 
 .card .img-wrapper {
+    position: relative;
     flex-shrink: 0;
     height: 200px;
     overflow: hidden;
@@ -195,4 +196,26 @@
 .projects-prev::after,
 .projects-next::after {
     font-weight: 700;
+}
+
+/* Selo de status do projeto (ex.: "Em desenvolvimento") */
+.card-badge {
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+    z-index: 1;
+    padding: .25rem .75rem;
+    border-radius: 20px;
+    background-color: #ffc107;
+    color: #212529;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(22, 22, 26, 0.2);
+}
+
+.card-badge.static {
+    position: static;
+    vertical-align: middle;
+    margin-left: .5rem;
+    box-shadow: none;
 }

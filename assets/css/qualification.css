@@ -79,3 +79,17 @@
     position: relative; /* Necessário para z-index */
     z-index: 1;
 }
+
+.qualification-description {
+    margin: .75rem 0 0;
+    font-size: 14px;
+    color: #6b6a7c;
+}
+
+.qualification-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: .75rem;
+}
