@@ -26,6 +26,10 @@
 }
 
 .qualification-menu-item {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
     display: flex;
     align-items: center;
     gap: 9px;

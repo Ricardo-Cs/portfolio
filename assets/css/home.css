@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 
-#home div > h2 {
+#home div > h1 {
     font-weight: 600;
 }
 
@@ -27,6 +27,13 @@
 
     50% {
         border-color: #000000
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #author-dev-area {
+        animation: none;
+        border-right: none;
     }
 }
 

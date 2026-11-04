@@ -15,7 +15,14 @@
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
+
+    <!-- Fonte Poppins (só os pesos usados) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="preload" href="./assets/fonts/Agustina-Signature.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Locais -->
     <script src="./assets/js/backToTop.js" defer></script>
@@ -24,7 +31,15 @@
     <script src="./assets/js/qualificationChange.js" defer></script>
     <script src="./assets/js/currentYear.js" defer></script>
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- CSS locais em <link> separados: carregam em paralelo (o @import carregava um após o outro) -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/qualification.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <link rel="stylesheet" href="./assets/css/contacts.css">
+    <link rel="stylesheet" href="./assets/css/medias-queries.css">
     <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
     <title>Ricardo | Portfólio</title>
     <meta name="description"
@@ -37,14 +52,15 @@
     <meta property="og:title" content="Ricardo Costa | Portfólio">
     <meta property="og:description"
         content="Desenvolvedor Full-Stack com foco em back-end e estudante de Sistemas para Internet no IFAC. Veja meus projetos e habilidades.">
-    <meta property="og:url" content="https://ricardo-cs.github.io/portfolio/">
-    <meta property="og:image" content="https://ricardo-cs.github.io/portfolio/assets/img/projects/portfolio-project.png">
+    <link rel="canonical" href="https://ricardoc.dev/">
+    <meta property="og:url" content="https://ricardoc.dev/">
+    <meta property="og:image" content="https://ricardoc.dev/assets/img/projects/portfolio-project.png">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
-    <button id="back-to-top">
-        <img src="./assets/img/icons/arrow-top.svg">
+    <button id="back-to-top" type="button" aria-label="Voltar ao topo">
+        <img src="./assets/img/icons/arrow-top.svg" alt="">
     </button>
 
     <header>
@@ -57,7 +73,7 @@
                             <span class="dark-text"> /></span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu de navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -90,19 +106,22 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column justify-content-start">
-                    <h2 class="display-4">Ricardo Costa</h2>
-                    <span id="author-dev-area" class="mb-3"></span>
+                    <h1 class="display-4">Ricardo Costa</h1>
+                    <!-- O efeito de digitação fica oculto para leitores de tela, que leem o texto estático -->
+                    <span class="visually-hidden">Desenvolvedor Back-End, graduando em Sistemas para Internet e
+                        Técnico em Informática para Internet.</span>
+                    <span id="author-dev-area" class="mb-3" aria-hidden="true"></span>
                     <span id="home-description" class="mb-3 description-text">Estudante de Sistemas para Internet pelo
                         IFAC. Apaixonado
                         por desenvolvimento e programação competitiva.</span>
                     <div id="home-social">
                         <ul class="d-flex gap-3 p-0 justify-content-center">
                             <li><a href="https://github.com/Ricardo-Cs" target="_blank"><img
-                                        src="./assets/img/icons/github.svg" alt="Ícone do github"></a></li>
+                                        src="./assets/img/icons/github.svg" alt="Meu GitHub"></a></li>
                             <li><a href="https://www.linkedin.com/in/ricardo-costa-s" target="_blank"><img
-                                        src="./assets/img/icons/linkedin.svg" alt="Ícone do linkedin"></a></li>
+                                        src="./assets/img/icons/linkedin.svg" alt="Meu LinkedIn"></a></li>
                             <li><a href="https://instagram.com/ricardo.silvac" target="_blank"><img
-                                        src="./assets/img/icons/ig.svg" alt="Ícone do instagram"></a></li>
+                                        src="./assets/img/icons/ig.svg" alt="Meu Instagram"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -149,7 +168,7 @@
                     <span>empresa trabalhada</span>
                 </div>
 
-                <a href="./assets/file/Currículo.pdf" download="Curriculo-Ricardo-Costa" id="btn-cv"
+                <a href="./assets/file/Currículo.pdf" download="Curriculo-Ricardo-Costa.pdf" id="btn-cv"
                     class="btn btn-primary mt-4">
                     <span>Baixar currículo</span>
                     <img src="./assets/img/icons/download.svg" alt="Ícone de download">
@@ -169,7 +188,7 @@
                         <span class="section-description">Educação e experiência profissional.</span>
                     </div>
                     <div class="qualification-menu d-flex justify-content-center gap-5">
-                        <div class="qualification-menu-item active">
+                        <button type="button" class="qualification-menu-item active" aria-pressed="true">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
                                 fill="#000000">
                                 <path
@@ -177,9 +196,9 @@
                             </svg>
 
                             <span>Educação</span>
-                        </div>
+                        </button>
 
-                        <div class="qualification-menu-item">
+                        <button type="button" class="qualification-menu-item" aria-pressed="false">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
                                 fill="#000000">
                                 <path
@@ -187,7 +206,7 @@
                             </svg>
 
                             <span>Trabalho</span>
-                        </div>
+                        </button>
                     </div>
                     <div class="qualification-content text-center active">
                         <div class="qualification-data pt-0">
@@ -268,12 +287,12 @@
                     <div class="section-head">
                         <h2 class="section-title">Habilidades</h2>
                         <span class="section-description">Tecnologias e Ferramentas com as quais já trabalhei e
-                            utilizei <br>tanto no âmbito acadêmico ou em projetos pessoais.</span>
+                            utilizei <br>tanto no âmbito acadêmico quanto em projetos pessoais.</span>
                     </div>
                     <div class="skills-content">
                         <div class="skills-category">
                             <span class="skills-category-title">
-                                <img src="./assets/img/icons/code.svg">
+                                <img src="./assets/img/icons/code.svg" alt="">
                                 Linguagens
                             </span>
                             <div class="skills-item">
@@ -334,7 +353,7 @@
 
                         <div class="skills-category mt-5">
                             <span class="skills-category-title">
-                                <img src="./assets/img/icons/tool.svg">
+                                <img src="./assets/img/icons/tool.svg" alt="">
                                 Tecnologias e Frameworks
                             </span>
 
@@ -409,7 +428,7 @@
 
                         <div class="skills-category mt-5">
                             <span class="skills-category-title">
-                                <img src="./assets/img/icons/git-repo.svg">
+                                <img src="./assets/img/icons/git-repo.svg" alt="">
                                 Ferramentas e Outros
                             </span>
 
@@ -834,24 +853,24 @@
                         <img src="./assets/img/icons/phone.svg" alt="Ícone de telefone">
                         <div class="contact-item-text">
                             <span class="contact-item-text-title">Telefone Celular</span>
-                            <span>+55 (68) 99903-3462</span>
+                            <a href="tel:+5568999033462">+55 (68) 99903-3462</a>
                         </div>
                     </div>
                     <div class="contact-item">
                         <img src="./assets/img/icons/email.svg" alt="Ícone de email">
                         <div class="contact-item-text">
                             <span class="contact-item-text-title">E-Mail</span>
-                            <span>rcsilva2405@gmail.com</span>
+                            <a href="mailto:rcsilva2405@gmail.com">rcsilva2405@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <img src="./assets/img/icons/location.svg" alt="Ícone de telefone">
+                        <img src="./assets/img/icons/location.svg" alt="Ícone de localização">
                         <div class="contact-item-text">
                             <span class="contact-item-text-title">Localização</span>
                             <span>Rio Branco - Acre</span>
                         </div>
                     </div>
-                    <a href="mailto:rcsilva2405@gmail.com" target="_blank" id="contact-button" class="mt-4">
+                    <a href="mailto:rcsilva2405@gmail.com" id="contact-button" class="mt-4">
                         Enviar E-Mail
                         <img src="./assets/img/icons/send-message.svg" alt="Ícone de enviar mensagem">
                     </a>
@@ -887,10 +906,12 @@
                 <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projetos</a></li>
                 <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-white">Contato</a></li>
             </ul>
+
+            <p class="w-100 text-center small mb-0 mt-3 text-white-50">Ilustrações por
+                <a href="https://storyset.com/business" target="_blank" class="text-white-50">Storyset</a></p>
         </footer>
     </section>
 
 </body>
 
 </html>
-<!-- <a href="https://storyset.com/business">Business illustrations by Storyset</a> -->

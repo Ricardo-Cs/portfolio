@@ -1,12 +1,12 @@
 const textElement = document.getElementById('author-dev-area');
 const text = ['Desenvolvedor Back-End', 'Graduando em Sistemas para Internet', 'Técnico em Informática para Internet'];
 let cout = 0;
-const typingSpeed = 100; 
+const typingSpeed = 100;
 const eraseSpeed = 50;
 
 function typeAndErase() {
     textElement.textContent = '';
-    
+
     function type() {
         if (charIndex < text[cout].length) {
             textElement.textContent += text[cout].charAt(charIndex);
@@ -23,8 +23,8 @@ function typeAndErase() {
             charIndex--;
             setTimeout(erase, eraseSpeed);
         } else {
-            charIndex = 0; 
-            cout == 2 ? cout = 0: cout++;
+            charIndex = 0;
+            cout = (cout + 1) % text.length;
             setTimeout(type, typingSpeed);
         }
     }
@@ -33,4 +33,9 @@ function typeAndErase() {
     type();
 }
 
-typeAndErase();
+// Quem pediu ao sistema para reduzir animações vê só a primeira frase, sem digitação
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    textElement.textContent = text[0];
+} else {
+    typeAndErase();
+}

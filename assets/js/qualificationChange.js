@@ -5,12 +5,14 @@ const qualificationContentNotActive = document.querySelector('.qualification-con
 
 qualificationMenuItens.forEach((item) => {
     item.addEventListener('click', () => {
-        if(!item.classList.contains('active')) {
+        if (!item.classList.contains('active')) {
             item.classList.add('active');
+            item.setAttribute('aria-pressed', 'true');
             qualificationMenuItemActive.classList.remove('active');
+            qualificationMenuItemActive.setAttribute('aria-pressed', 'false');
             qualificationMenuItemActive = item;
             qualificationContentActive.classList.toggle('active');
             qualificationContentNotActive.classList.toggle('active');
-        };
-    })
-})
+        }
+    });
+});
