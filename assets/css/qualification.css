@@ -63,7 +63,7 @@
 .dot {
     height: 15px;
     width: 15px;
-    background-color: #0d6efd;
+    background-color: var(--coral);
     border-radius: 50%;
     display: inline-block;
     position: relative; /* Necessário para z-index */
